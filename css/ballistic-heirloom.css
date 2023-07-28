@@ -1,0 +1,298 @@
+.heirloom {
+    /* min-height: 100vh; */
+    /* min-width: 100vw; */
+    padding: 0;
+    background: #282828;
+
+}
+.heirloom-container{
+    display: none;
+    position: relative;
+}
+
+
+.heirloom-container.active{
+    display: block;
+}
+
+.heirloom-whole-balli {
+    position: relative;
+    /* min-height: 100vh; */
+    display: flex;
+    background: linear-gradient(rgba(24, 54, 57, 0.728), rgba(12, 26, 35, 0.903)), url(../pic/heirloompicture/ballistic/ballistic-bg.jpg) fixed center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heirloom-whole-balli h1 {
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    position: relative;
+    color: #fff;
+    padding: 100px 200px;
+    z-index: 20000;
+}
+
+.balliback {
+    position: relative;
+}
+
+.balli-container {
+    background: url("../pic/heirloompicture/ballipto/ballipto-heir-removebg-preview.png");
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    filter: brightness(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dot::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../pic/heirloompicture/videoDot.png");
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center center;
+    overflow: hidden;
+    opacity: 0.9;
+}
+
+.dot::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(86, 86, 86, 0.945);
+    opacity: 0.8;
+    mix-blend-mode: hard-light;
+}
+
+.heirloomName-balli {
+    z-index: 20;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    padding-top: 100px;
+}
+
+.heirloomName-balli h2 {
+    font-size: 5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    background-image: linear-gradient(to bottom, rgb(50, 59, 61), rgb(30, 129, 175));
+    text-stroke: 2px rgb(208, 208, 208);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heirloomName-balli p {
+    font-weight: 800;
+    color: #fff;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 3em;
+    text-stroke: 2px rgb(208, 208, 208);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url('../pic/heirloompicture/ballistic/balli-word.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heirloom-ani {
+    z-index: 20;
+    filter: brightness(150%);
+    height: 100vh;
+    position: relative;
+    animation: floating 5s infinite alternate ease-in-out;
+}
+
+.border-container {
+    height: 100vh;
+    width: 100wv;
+    top: 0;
+    position: absolute;
+}
+
+.border-container:after{
+    content:'';
+    background: #fff;
+    position: absolute;
+    width: 500px;
+    height: 2px;
+    top:30%;
+    /* left:20%; */
+    transform: translate(50%,50%);
+}
+
+.border-container-2 {
+    bottom: 100px;
+    right: 150px;
+    position: absolute;
+}
+
+.border-container-2:after{
+    content: '';
+    background: #fff;
+    position: absolute;
+    height: 300px;
+    width: 2px;
+    bottom:0%;
+    right: 30%;
+    transform: translate(-50%,-50%);
+    filter: brightness(150%);
+}
+
+.border-container-2::before{
+    content: '';
+    background: #fff;
+    position: absolute;
+    height: 2%;
+    width: 300px;
+    top:-100%;
+    right: 0%;
+    transform: translate(-70%,100%);
+    filter: brightness(150%);
+}
+
+.border-1 {
+    z-index: 200;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background-size: contain;
+}
+
+
+.circle-1::after {
+    content: '';
+    background: url("../pic/heirloompicture/graycircle.png");
+    background-position: center;
+    background-size: contain;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    animation: rotate-animation 4s infinite;
+    opacity: 0.5;
+    filter: invert(1) hue-rotate(.5turn)blur(1px);
+
+}
+
+.circle-1::before {
+    opacity: 0.5;
+    filter: invert(1) hue-rotate(.5turn) blur(1px);
+    content: '';
+    background: url("../pic/heirloompicture/graycircle.png");
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    animation: rotate-animation-rev 4s infinite;
+}
+
+.circle-2::after {
+    content: '';
+    background: url("../pic/heirloompicture/graycircle.png");
+    background-position: center;
+    background-size: contain;
+    bottom: -50px;
+    right: 50px;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    animation: rotate-animation 4s infinite;
+    opacity: 0.5;
+    filter: invert(1) hue-rotate(.5turn)blur(1px);
+
+}
+
+.circle-2::before {
+    opacity: 0.5;
+    filter: invert(1) hue-rotate(.5turn) blur(1px);
+    content: '';
+    background: url("../pic/heirloompicture/graycircle.png");
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    bottom: 50px;
+    right: 0px;
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+    animation: rotate-animation-rev 4s infinite;
+}
+
+
+.balli-heir1 {
+    /* position: relative; */
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* background: url("../pic/border.png"); */
+    background-size: contain;
+}
+
+.balli-heir2 {
+    position: relative;
+    float: right;
+    z-index: 200;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    /* background: url("../pic/border.png"); */
+    background-size: contain;
+}
+
+.apex-icon {
+    z-index: 2000;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    border: 2px solid red;
+}

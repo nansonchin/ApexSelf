@@ -1,0 +1,50 @@
+.skill-mirage {
+    padding: 10px;
+    height: 200px;
+    width: 450px;
+    background: rgba(45, 45, 45, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.4px);
+    -webkit-backdrop-filter: blur(9.4px);
+    border: 1px solid rgba(94, 94, 94, 0.48);
+    position: relative;
+}
+
+.skill-mirage::before{
+    content: '';
+    position: absolute;
+    background:#fbe601;
+    height: 5px;
+    width: 200px;
+    bottom:0;
+    right: 5%;
+}
+
+.skill-title {
+    display: flex;
+    justify-content:center;
+}
+
+.skill-title .skill-desc h2 {
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.skill-mirage .skill-desc p {
+    font-size: 20px;
+    color: #bebebe;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-mirage .skill-title img {
+    height: 80px;
+}
+
+.skill-mirage p{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+}

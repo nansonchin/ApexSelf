@@ -1,0 +1,86 @@
+.legend {
+    position: relative;
+    overflow: hidden;
+    /* min-height: 100vh; */
+    /* min-width: 100vw; */
+        background: #202020;
+
+}
+
+.legend-container{
+    overflow-x: hidden;
+    display: none;
+}
+
+.legend-container.active{
+    display: block;
+    overflow: hidden;
+}
+
+.legend-objMove{
+    /* z-index: 20000; */
+    overflow: hidden;
+}
+
+#moveObjLegend{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 200px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    animation: floating 5s infinite alternate ease-in-out;
+
+}
+
+
+/* 
+.legend-icon {
+    background: url("../pic/icon/cryicon-removebg-preview.png");
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.5;
+} */
+
+.legend-container h1 {
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    position: relative;
+    color: #fff;
+}
+
+.legend-container h1 span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.legend-container h1 span img {
+    width: 70px;
+    height: 70px;
+}
+
+.crypSkill {
+    position: relative;
+    /* min-height: 100vh; */
+    display: flex;
+    /* justify-content: space-around; */
+    gap:2%;
+}
+
+.drone-picture-cry{
+    filter: invert(1) hue-rotate(.5turn);
+}
+
+.test{
+    min-height: 100vh;
+}

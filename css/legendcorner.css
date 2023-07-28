@@ -1,0 +1,21 @@
+
+.legend-corner{
+    z-index: 2000;
+    position: absolute;
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    bottom:0%;
+    overflow: hidden;
+    animation:floating-rotate30 3s linear infinite;
+}
+
+.legend-corner img{
+    position: absolute;
+    left: 0;
+    bottom:0%;
+    width: 350px;
+    transform: rotate(-30deg);
+    animation:moveAnimation 5s linear;
+}
